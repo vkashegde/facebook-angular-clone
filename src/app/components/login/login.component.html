@@ -11,7 +11,7 @@
                     <form #form='ngForm' class="login-form" (ngSubmit)="login(form)">
                         <input type="email" name="email" ngModel placeholder="Email Address" required>
                         <input type="password" name="password" ngModel placeholder="Password" required>
-                        <button type="submit" [disabled]="form.invalid ||form.pending"></button>
+                        <button type="submit" [disabled]="form.invalid ||form.pending">Login</button>
                     </form>
                     <a href="#"> Forgotten Account?</a>
                     <button class="create-account" (click)="openRegister()">Create New Account</button>

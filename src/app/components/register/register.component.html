@@ -1,1 +1,22 @@
-<p>register works!</p>
+<section class="register">
+    <div class="header">
+        <h3>Sign up</h3>
+        <p>Its Quick and easy</p>
+    </div>
+
+    <div class="body">
+        <form>
+            <div class="user_name">
+                <input type="text" placeholder="First Name" name="fname" ngModel>
+                <input type="text" placeholder="Last Name" name="lname" ngModel>
+            </div>
+            <div class="email_password">
+                <input type="email" placeholder="Email" name="email" ngModel>
+                <input type="email" placeholder="Image Url" name="avatar" ngModel>
+                <input type="password" placeholder="Password" name="pas sword" ngModel>
+            </div>
+            <p>Disclaimer here</p>
+            <button type="submit" class="submit-button" [mat-dialog-close]="form.value">signup</button>
+        </form>
+    </div>
+</section>
